@@ -1,7 +1,7 @@
 #!/bin/bash
 yum update -y
-amazon-linux-extras install -y php8.0 mariadb10.5
-yum install -y httpd git
+#amazon-linux-extras install -y php8.0 mariadb10.5
+yum install -y httpd git mariadb105-server.x86_64 php8.1.x86_64
 systemctl start httpd
 systemctl enable httpd
 usermod -a -G apache ec2-user
